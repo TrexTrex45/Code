@@ -1,0 +1,33 @@
+  string firstName = "Terrence";
+            Console.WriteLine($"Hello,{firstName}!");
+            string LastName = "Edwards";
+            string major = "cyber security";
+            Console.WriteLine($"{firstName} {LastName}'s major is {major}");
+            int a = 12;
+            int b = 20;
+            string sum = "The Sum is ";
+            Console.WriteLine(a + b);
+
+            Console.WriteLine(sum + a + b);
+            // The a + b statement equals 32 but in the (sum + a + b) statement equals 1220
+            //The difference is in the second statement of (sum + a + b), the sum varible just put the two numbers together which gives 1220
+            // The variable (+) there are many different options but in this it combines the two numbers
+            int number1 = 1;
+            int number2 = 2;
+            int number3 = 3;
+
+            Console.WriteLine(number1 + number2 + number3);
+            Console.WriteLine($"The average of {number1}, {number2},and {number3} is equal to 2");
+            int pi = 355 / 113;
+            Console.WriteLine("Pi:" + pi);
+            double piDouble = 355d / 113d;
+            Console.WriteLine("Double:" + piDouble);
+            decimal deciamlPi = 355m / 113m;
+            Console.WriteLine("Deciaml:" + deciamlPi);
+
+            // Int usually represents any number in between positive two billion to negative two billion; which is very less percision
+            // Double are 64-bit number that can handle all of information but trends to be less percision   
+            // Deciaml is used for 128-bit number. Percision is everything with the deciaml because is usually used for financial   
+            // With smaller types like double, int, and float, the precision errors would accumlate  that would lead to producing inaccurate calculations with money
+            // With deciaml is error that the double and int would create, with the deciaml type avoids this issue altogether 
+            
