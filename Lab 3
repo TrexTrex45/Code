@@ -1,0 +1,54 @@
+using System;
+
+namespace Lab3
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            // if single statement is used to evalutes true and false statements which means that ifthe statement is true the if statement will evalute it
+            // but it is false program will excute the next line of code
+            // With while statement, the line of code gets excuted over and over again until the condition is met then the loop will stop
+            // Difference between the two are that if statement can only excute true and false statements while the while loop statement will excute the code over and over again until the condition is met 
+            int speedLimit = 35;
+            int speed = 42;
+            Console.WriteLine("Speed Limit is 35");
+            if (speed > speedLimit)
+            {
+                Console.WriteLine("Slow Now"); }
+            int Speed = 60;
+            if (Speed == 60)
+                {
+                Console.WriteLine("It is True");
+            }
+            else
+            {
+                Console.WriteLine("It is False");
+            }
+            int price = 40;
+            if (price > 30)
+            {
+                Console.WriteLine("It is False");
+            }
+            else
+            {
+                Console.WriteLine("It is True");
+            }
+            int counter = 1;
+            while (counter <= 10)
+            {
+                Console.WriteLine("The counter is " + counter);
+                counter++;
+            }
+            int Counter = 60;
+            while (Counter >= 20)
+            {
+                Console.WriteLine("The counter is " + Counter);
+                Counter-=5;
+            }
+            int i = 10;
+            while (i <= 20)
+            {
+                Console.WriteLine("The i is + " + i);
+                i+=2;
+            }
