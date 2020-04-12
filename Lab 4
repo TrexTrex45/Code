@@ -1,0 +1,64 @@
+using System;
+
+namespace Lab4
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            for (int i = 0; i <= 100; i++)
+                if ((i % 2 == 0)) // it's even
+                {
+                    Console.WriteLine(i);
+                }
+            for (int i = 0; i <= 100; i++)
+            {
+                if ((i % 2 != 0)) // it's odd
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            Console.Write("Please enter a temperature ");
+            
+
+            int temp = int.Parse(Console.ReadLine()); ;
+            if (temp >= 90) { Console.WriteLine("fish"); }
+
+            else if (temp >= 80)
+            { Console.WriteLine("Lion"); }
+
+            else if (temp >= 70) { Console.WriteLine("Turle"); }
+
+            else if (temp >= 60) { Console.WriteLine("Deer"); }
+
+            else if (temp >= 50) { Console.WriteLine("Reindeer"); }
+
+            else if (temp >= 40) { Console.WriteLine("Moose"); }
+
+            else if (temp >= 20) { Console.WriteLine("Penguin"); }
+
+            else if (temp >= 10) { Console.WriteLine("Polar Bear"); }
+
+            else
+            {
+                Console.WriteLine("Bug");
+            }
+            int t = 10;
+            while (t < 21)
+            {
+                Console.WriteLine(t);
+                t++;
+            }
+
+            for (int v = 0; v < 101; v++)
+            {
+                Console.WriteLine(v);
+                Console.WriteLine("********");
+            }
+            // The while loop is a conditional loop that will repeat the same instructions as long as the conditional remains true
+            // For loop is to process the item of any sequence, such a string or list one by one
+            // Both loops (for and while) can each be used for either repetition type
+
+            //When I would use a do-while loop instead of a while loop would be when I want my code to adleast excute once
+            //While loop I would use if I don't know how many times a loop will actually run at runtime
