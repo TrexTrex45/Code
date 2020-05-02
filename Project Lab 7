@@ -1,0 +1,107 @@
+using System;
+
+namespace ProjectLab7
+{
+    // 3. The advantages of creating your own constructor methods is that constructor save time and makes your code look more organized.
+    //More advantages of creating and using your own constructors in C# is that to allocate the memory of the class, to initialization class object, and initialization the information member of the class. 
+
+    // 4. A new programmming logic sense may be introduced to the existing constructor method of sophistication, or two new constructor techniques may be created for class. 
+    //A brand new constructor technique is created which, in reaction to obtaining the saved statistics of the class’s preliminary location, the place after dragging, and mapping the relationship between these locations in the window, presentations this class within the area after dragging.
+    //In a 3rd embodiment, a new constructor method is created within the following manner: construct the magnificence at the preliminary location and, in response to obtaining the stored<app_name>.manifest file that manifests the magnificence’s preliminary location, the area after dragging, and the mapping courting among those places within the window, shows this class inside the area after dragging.
+
+    // 5.Exception handling is used to stop software from being caught due to uncommon occurrences. If the exceptions are dealt with properly, the software will in no way get terminated abruptly. 
+    // Error handling is essential because it makes it simpler for the stop users of your code to use it correctly.Another vital problem is that it makes your code simpler to maintain. Error handling makes it less difficult to embed enter specs into the code, so you do not have to seem to be up the design when you write and later preserve the code.
+
+    // 6. The public keyword specifies that a variable or feature is handy to any caller. Because variables and features are public via default, this keyword is used particularly for stylistic and readability benefits, indicating that the variable exists in the current scope. 
+    //The private keyword specifies that a variable or feature is accessible only to the class that announces or defines it or to subclasses of that class. By default, a variable or function is public, and reachable to any caller.Use this keyword if you favor to prevent get right of entry to a variable or function.
+    //Data hiding is best defined by the hiding of the base class method in the derived class with the naming of the new class method the exact same name as the base class. To better understand this, say we were to design a class for both public and private members.The class would have a code for public members and entirely different code for private members can access.
+
+
+    // 7. Composition is the technique that implements has-a relationship into classes. With composition is a very special case of aggregation.
+    //To better understand, composition is definitely more restrictive. Composition with two objects can’t exist without the other object in the composition.
+    //If we were to use the composition technique in our Book class has to implement has-a relationship in classes or either the inheritance or object composition for the code to reuse. 
+
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Book book = new Book();
+            book.author = "Grover";
+            book.title = "Relentless: From Good to Great to Unstoppable";
+            book.year = "2013";
+            Console.WriteLine(book.getTitle());
+
+            Console.WriteLine("About this book");
+            Console.WriteLine("Author: " + book.getAuthor());
+            Console.WriteLine("Title: " + book.getTitle());
+            Console.WriteLine("Year: " + book.getYear());
+
+
+
+            Book book2 = new Book("The Great Gatsby", "Fizgerald");
+            Console.WriteLine(book2.getTitle());
+            Console.WriteLine(book2.getAuthor());
+        }
+        internal static void Display()
+        {
+            Console.WriteLine("Author:");
+            Console.WriteLine("Title:");
+            Console.WriteLine("Year:");
+            
+        }
+    }
+}
+
+
+
+using System;
+
+namespace ProjectLab7
+{
+    public class Book
+    {
+        public string author;
+        public string title;
+        public string year;
+       
+        public Book()
+        {
+        }
+
+        public Book(string title, string author)
+        {
+            this.title = title;
+            this.author = author;
+        }
+
+        public string getTitle()
+        {
+            return this.title;
+        }
+
+        public void setTitle(string title)
+        {
+            this.title = title;
+        }
+
+        public string getAuthor()
+        {
+            return this.author;
+        }
+
+        public void setAuthor(string author)
+        {
+            this.author = author;
+        }
+
+        public string getYear()
+        {
+            return this.year;
+        }
+
+        public void setYear(string year)
+        {
+            this.year = year;
+        }
+    }
+}
